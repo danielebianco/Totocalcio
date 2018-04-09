@@ -25,7 +25,11 @@ public class Schedina {
 	public Risultato get(int partita) {
 		return colonna.get(partita);
 	}
-
+	
+	public void removeLast() {
+		colonna.remove(colonna.size()-1);
+	}
+	
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		for (Risultato r : colonna) {
